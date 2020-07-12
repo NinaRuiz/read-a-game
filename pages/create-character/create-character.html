@@ -12,6 +12,11 @@
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="create-character.css">
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,25 +25,103 @@
         <span class="navbar-brand mb-0 h1">Play A Game</span>
     </nav>
 <!-- Character Form -->
-    <form class="inputForm">
-        <div class="form-group">
-            <label for="name-input">Nombre</label>
-            <input class="form-control" id="name-input">
+<div class="accordion">
+    <div class="card">
+        <div class="card-header header-collapse">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Información general
+                </button>
+            </h2>
         </div>
 
-        <div class="form-group">
-            <label for="age-input">Edad</label>
-            <input class="form-control" id="age-input">
+        <div id="collapseOne" class="show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="player_name">Nombre del jugador: </label>
+                    <input type="email" class="form-control" id="player_name">
+                </div>
+                <div class="form-group">
+                    <label for="character_name">Nombre del personaje:</label>
+                    <input type="email" class="form-control" id="character_name">
+                </div>
+                <div class="form-group">
+                    <label for="profession">Ocupación:</label>
+                    <input type="email" class="form-control" id="profession">
+                </div>
+                <div class="form-group">
+                    <label for="degrees">Titulo de estudios:</label>
+                    <input type="email" class="form-control" id="degrees">
+                </div>
+                <div class="form-group">
+                    <label for="birth_place">Lugar de nacimiento:</label>
+                    <input type="email" class="form-control" id="birth_place">
+                </div>
+                <div class="form-group">
+                    <label for="mental_health">Trastornos mentales:</label>
+                    <input type="email" class="form-control" id="mental_health">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Sexo:</label>
+                    <input type="email" class="form-control" id="gender">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="email" class="form-control" id="age">
+                </div>
+            </div>
         </div>
-
-        <div class="form-group">
-            <label for="profession-input">Profesion</label>
-            <input class="form-control" id="profession-input">
+    </div>
+    <div class="card">
+        <div class="card-header header-collapse" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                </button>
+            </h2>
         </div>
-
-        <button id="create-button" type="submit" class="btn btn-primary">Crear</button>
-    </form>
+        <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header header-collapse" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Script -->
+<script>
+    function loadCollapses() {
+        let elements = document.getElementsByClassName('header-collapse');
+
+        for (let element of elements) {
+            element.onclick = function () {
+
+                let el = this.parentElement.getElementsByTagName('div')[1];
+
+                if(el.style.display != '') {
+                    el.style.display = '';
+                } else {
+                    el.style.display = 'none';
+                }
+            };
+        }
+    }
+
+    loadCollapses();
+</script>
 <script type="module" src = "create-character.js" ></script>
 </body>
 </html>

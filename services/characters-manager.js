@@ -3,12 +3,62 @@ const path = './data/characters/';
 const typeJson = '.json';
 
 // Create Character Object Function
-function createCharacterObject(name, age, profession) {
+function createCharacterObject(
+    player_name, character_name, profession, degrees, birth_place,
+    mental_health, gender, age, FUE, DES, INT, CON, APA, POD,
+    TAM, COR, EDU, ideas, luck, knowledge, sanity, magic, health,
+    ) {
     // Set the data as an object
     let createdObject = {
-        name: name,
+        player_name: player_name,
+        character_name: character_name,
+        profession: profession,
+        degrees: degrees,
+        birth_place: birth_place,
+        mental_health: mental_health,
+        gender: gender,
         age: age,
-        profession: profession
+        characteristics: {
+            FUE: FUE,
+            DES: DES,
+            INT: INT,
+            CON: CON,
+            APA: APA,
+            POD: POD,
+            TAM: TAM,
+            COR: COR,
+            EDU: EDU,
+            ideas: ideas,
+            luck: luck,
+            knowledge: knowledge,
+            },
+        sanity: sanity,
+        magic: magic,
+        health: health,
+        abilities: {},
+        fire_guns: {},
+        attacks: {},
+        personal_stuff: {
+            home: {},
+            description: "null",
+            family_friends: {},
+            crazy_episodes: {},
+            injuries: {},
+            scars: {},
+        },
+        history: "null",
+        savings_incomes: {
+            anual: 0,
+            money: 0,
+            savings: 0,
+            properties: {},
+            houses: {}
+        },
+        studied_miths: {},
+        magic_objects: {},
+        magic_spells: {},
+        equipment: {},
+        found_beings: {}
     };
 
     // Return the object
