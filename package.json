@@ -1,0 +1,26 @@
+{
+  "name": "play-a-game",
+  "version": "1.0.0",
+  "description": "A book or a game, you choose",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "electron": "^9.1.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NinaRuiz/read-a-game.git"
+  },
+  "author": "Nina Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NinaRuiz/read-a-game/issues"
+  },
+  "homepage": "https://github.com/NinaRuiz/read-a-game#readme"
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>File System</title>
+    <link rel = "stylesheet"
+          href = "../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="create-character.css">
+</head>
+
+<body>
+<!-- Toolbar -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Play A Game</span>
+    </nav>
+<!-- Character Form -->
+    <form class="inputForm">
+        <div class="form-group">
+            <label for="name-input">Nombre</label>
+            <input class="form-control" id="name-input">
+        </div>
+
+        <div class="form-group">
+            <label for="age-input">Edad</label>
+            <input class="form-control" id="age-input">
+        </div>
+
+        <div class="form-group">
+            <label for="profession-input">Profesion</label>
+            <input class="form-control" id="profession-input">
+        </div>
+
+        <button id="create-button" type="submit" class="btn btn-primary">Crear</button>
+    </form>
+<!-- Script -->
+<script type="module" src = "create-character.js" ></script>
+</body>
+</html>
+
