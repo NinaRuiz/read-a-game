@@ -31,7 +31,7 @@
         <li class="page-item"><a class="page-link" href="./create-character-page-two.html">2</a></li>
         <li class="page-item"><a class="page-link" href="./create-character-page-three.html">3</a></li>
         <li class="page-item"><a class="page-link" href="./create-character-page-four.html">4</a></li>
-        <li class="page-item"><a class="page-link" href="./create-character-page-three.html">Next</a></li>
+        <li class="page-item"><a class="page-link" href="./create-character-page-four.html">Next</a></li>
     </ul>
 </nav>
 
@@ -41,47 +41,26 @@
         <div class="card-header">
             <h2 class="mb-0">
                 <button class="btn btn-link btn-block center-text" type="button">
-                    Características y tiradas
+                    Edad
                 </button>
             </h2>
         </div>
         <div class="show" aria-labelledby="headingOne">
             <div class="card-body">
                 <p>
-                    Las caracteristicas del jugador se calculan haciendo tiradas de dados, en
-                    este caso, las haré por ti. <br>
-                    Si no te gustan como han quedado... ¡siempre puedes volver a tirarlas!
+                   Es hora de decidir quién será el más sabio y quién el más adorable, en otras palabras,
+                    a saber que tan cerca estamos de la muerte.
+                    La edad base parte de nuestra educación (EDU). En tu caso seria <span id="age"></span>
+                    pero si quieres puedes añadir más años.
+                    ¿Quieres? ¿Cuantos?
                 </p>
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <td>FUE</td>
-                        <td id="FUE"></td>
-                        <td>DES</td>
-                        <td id="DES"></td>
-                        <td>INT</td>
-                        <td id="INT"></td>
-                    </tr>
-                    <tr>
-                        <td>CON</td>
-                        <td id="CON"></td>
-                        <td>APA</td>
-                        <td id="APA"></td>
-                        <td>POD</td>
-                        <td id="POD"></td>
-                    </tr>
-                    <tr>
-                        <td>TAM</td>
-                        <td id="TAM"></td>
-                        <td>COR</td>
-                        <td id="COR"></td>
-                        <td>EDU</td>
-                        <td id="EDU"></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <button type="button" class="btn btn-secondary">Tirar de nuevo</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Añadir años: </span>
+                    </div>
+                    <input id="add-age" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <button id="button-add-age" type="button" class="btn btn-primary">Añadir</button>
             </div>
         </div>
     </div>
