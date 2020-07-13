@@ -48,7 +48,7 @@ function createCharacterObject(
         },
         history: "null",
         savings_incomes: {
-            anual: 0,
+            yearly: 0,
             money: 0,
             savings: 0,
             properties: {},
