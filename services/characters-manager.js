@@ -6,7 +6,8 @@ const typeJson = '.json';
 function createCharacterObject(
     player_name, character_name, profession, degrees, birth_place,
     mental_health, gender, age, FUE, DES, INT, CON, APA, POD,
-    TAM, COR, EDU, ideas, luck, knowledge, sanity, magic, health,
+    TAM, COR, EDU, ideas, luck, knowledge, sanity, damage_bonus, cthulhu_miths,
+    magic, health,
     ) {
     // Set the data as an object
     let createdObject = {
@@ -33,6 +34,8 @@ function createCharacterObject(
             knowledge: knowledge,
             },
         sanity: sanity,
+        damage_bonus: damage_bonus,
+        cthulhu_miths: cthulhu_miths,
         magic: magic,
         health: health,
         abilities: {},
