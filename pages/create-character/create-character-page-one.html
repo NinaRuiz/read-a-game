@@ -47,6 +47,10 @@
         </div>
         <div class="show" aria-labelledby="headingOne">
             <div class="card-body">
+                <div id="save-alert-one" hidden class="alert alert-success" role="alert">
+                    ¡Guardado!
+                </div>
+                <table class="table">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -59,15 +63,11 @@
                                 <input type="text" class="form-control" id="character_name">
                             </div>
                             <div class="form-group">
-                                <label for="profession">Ocupación:</label>
-                                <input type="text" class="form-control" id="profession">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
                                 <label for="birth_place">Lugar de nacimiento:</label>
                                 <input type="text" class="form-control" id="birth_place">
                             </div>
+                        </div>
+                        <div class="col">
                             <div class="form-group">
                                 <label for="mental_health">Trastornos mentales:</label>
                                 <input type="text" class="form-control" id="mental_health">
@@ -79,6 +79,8 @@
                         </div>
                     </div>
                 </div>
+                </table>
+                <button id="save-info-button" type="button" class="btn btn-primary">Guardar</button>
             </div>
         </div>
     </div>
