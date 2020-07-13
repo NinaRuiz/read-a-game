@@ -1,7 +1,6 @@
 const $ = require('jquery');
 
 import {createCharacterObject, createCharacter} from "../../services/characters-manager.js";
-const template = require('../../html-templates/toolbar-template');
 
 // Document elements
 const nameInput = $('#name-input');
