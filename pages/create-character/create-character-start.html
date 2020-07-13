@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>File System</title>
+    <link rel = "stylesheet"
+          href = "../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="create-character.css">
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Toolbar -->
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Play A Game</span>
+</nav>
+
+<!-- Character Form -->
+<div class="center">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="mb-0">
+                <span class="btn btn-link btn-block center-text" type="button">
+                    ¡Vamos a crear tu personaje!
+                </span>
+            </h2>
+        </div>
+        <div class="show" aria-labelledby="headingOne">
+            <div class="card-body">
+                <p>
+                    Antes que nada rellenaremos unos datos básicos y en cuanto acabemos con ello empezaremos
+                    con la diversión.
+                </p>
+                <p>
+                    Vamos a ello entonces... ¡Que empiece la mágia!
+                </p>
+                <a href="create-character-page-one.html" type="button" class="btn btn-primary">Comenzar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script -->
+<script type="module" src = "create-character.js" ></script>
+</body>
+</html>
+
