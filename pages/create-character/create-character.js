@@ -162,5 +162,15 @@ saveButtonPageTwo.click(function () {
 });
 
 // *************************************************************************** Page three functions
+// DOM Elements
+const saveInfoButtonThree = $('#save-info-button-three');
+const continueButtonPageThree = $('#continue-page-three-button');
+const saveAlertThree = $('#save-alert-three');
+
+// Save Button function
+saveInfoButtonThree.click(function () {
+    saveAlertThree.removeAttr('hidden');
+    continueButtonPageThree.removeAttr('hidden');
+});
 
 // *************************************************************************** Page four functions
