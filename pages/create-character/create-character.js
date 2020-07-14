@@ -10,6 +10,7 @@ const birth_placeInput = $('#birth_place');
 const mental_healthInput = $('#mental_health');
 const genderInput = $('#gender');
 const saveInfoButton = $('#save-info-button');
+const continuePageOneButton = $('#continue-page-one-button');
 
 // Variables
 let player_name;
@@ -30,6 +31,7 @@ function savePlayer() {
 
 saveInfoButton.click(function () {
     savePlayer();
+    continuePageOneButton.removeAttr('hidden');
 });
 
 // Page two functions
