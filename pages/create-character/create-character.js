@@ -2,7 +2,7 @@ const $ = require('jquery');
 
 import {createCharacterObject, createCharacter} from "../../services/characters-manager.js";
 
-// Page one functions
+// *************************************************************************** Page one functions
 // DOM elements
 const player_nameInput = $('#player_name');
 const character_nameInput = $('#character_name');
@@ -19,6 +19,7 @@ let birth_place;
 let mental_health;
 let gender;
 
+// Save Player on the variables
 function savePlayer() {
     player_name = player_nameInput.val();
     character_name = character_nameInput.val();
@@ -29,12 +30,13 @@ function savePlayer() {
     $('#save-alert-one').removeAttr('hidden');
 }
 
+// Save button function
 saveInfoButton.click(function () {
     savePlayer();
     continuePageOneButton.removeAttr('hidden');
 });
 
-// Page two functions
+// *************************************************************************** Page two functions
 // DOM elements
 const outputFUE = $('#FUE');
 const outputDES = $('#DES');
@@ -46,6 +48,9 @@ const outputTAM = $('#TAM');
 const outputCOR = $('#COR');
 const outputEDU = $('#EDU');
 const againButton = $('#again-button');
+const saveButtonPageTwo = $('#save-info-button-two');
+const continueButtonPageTwo = $('#continue-page-two-button');
+const saveAlertPageTwo = $('#save-alert-two');
 
 //Variables
 let FUE;
@@ -150,3 +155,12 @@ againButton.click(function () {
     calculateCaracteristics();
 });
 
+// Save button function
+saveButtonPageTwo.click(function () {
+    saveAlertPageTwo.removeAttr('hidden');
+    continueButtonPageTwo.removeAttr('hidden');
+});
+
+// *************************************************************************** Page three functions
+
+// *************************************************************************** Page four functions
