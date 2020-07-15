@@ -11,6 +11,7 @@ function createCharacterObject(
     ) {
     // Set the data as an object
     let createdObject = {
+        rol_game: "call_of_cthulhu",
         player_name: player_name,
         character_name: character_name,
         profession: profession,
@@ -32,7 +33,7 @@ function createCharacterObject(
             ideas: ideas,
             luck: luck,
             knowledge: knowledge,
-            },
+        },
         sanity: sanity,
         damage_bonus: damage_bonus,
         cthulhu_miths: cthulhu_miths,
@@ -71,7 +72,10 @@ function createCharacterObject(
 // Create Character json file
 function createCharacter(data, name){
 
+    let id;
     let json;
+
+    id = "_" + name;
 
     // Try to convert the data object to json
     try {
@@ -81,7 +85,7 @@ function createCharacter(data, name){
     }
 
     // Create the file and save it to the default path
-    fs.writeFile(path + name + typeJson, json, function (err) {
+    fs.writeFile(path + id + typeJson, json, function (err) {
         if (err) {
             return console.error(err);
         }

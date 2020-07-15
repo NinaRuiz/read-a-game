@@ -25,16 +25,6 @@
     <span class="navbar-brand mb-0 h1">Play A Game</span>
 </nav>
 
-<nav aria-label="Page navigation" class="pagination-center">
-    <ul class="pagination justify-content-center">
-        <li class="page-item"><a class="page-link" href="../create-character-page-one/create-character-page-one.html">1</a></li>
-        <li class="page-item"><a class="page-link" href="../create-character-page-two/create-character-page-two.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="../create-character-page-three/create-character-page-three.html">3</a></li>
-        <li class="page-item"><a class="page-link" href="./create-character-page-four.html">4</a></li>
-        <li class="page-item"><a class="page-link" href="./create-character-page-four.html">Next</a></li>
-    </ul>
-</nav>
-
 <!-- Character Form -->
 <div class="center">
     <div class="card">
@@ -47,6 +37,9 @@
         </div>
         <div class="show" aria-labelledby="headingOne">
             <div class="card-body">
+                <div id="save-alert-four" hidden class="alert alert-success" role="alert">
+                    ¡Guardado!
+                </div>
                 <p>
                    Es hora de decidir quién será el más sabio y quién el más adorable, en otras palabras,
                     a saber que tan cerca estamos de la muerte.
@@ -67,6 +60,7 @@
                         Tu edad final serà: <span id="final-age"></span>.
                     </p>
                     <button id="save-age-button" type="button" class="btn btn-primary">Guardar</button>
+                    <a href="../create-character-page-four/create-character-page-four.html" hidden id="continue-page-four-button" type="button" class="btn btn-primary">Continuar</a>
                 </div>
             </div>
         </div>
@@ -76,7 +70,7 @@
 
 
 <!-- Script -->
-<script type="module" src = "../create-character.js" ></script>
+<script type="module" src = "./create-character-page-four.js" ></script>
 </body>
 </html>
 

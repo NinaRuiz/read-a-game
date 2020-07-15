@@ -1,7 +1,7 @@
 const $ = require('jquery');
 
 // DOM Elements
-import {CON, EDU, FUE, INT, POD, TAM} from "../create-character-page-two/create-character-page-two";
+import {CON, EDU, FUE, INT, POD, TAM} from "../create-character-page-two/create-character-page-two.js";
 
 const saveInfoButtonThree = $('#save-info-button-three');
 const continueButtonPageThree = $('#continue-page-three-button');
