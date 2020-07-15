@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>File System</title>
+    <link rel = "stylesheet"
+          href = "../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="menu-app.css">
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Toolbar -->
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Play A Game</span>
+</nav>
+
+<!-- Character Form -->
+<div class="center">
+    <div class="card">
+        <div class="card-header text-center">
+            <h2 class="mb-0">
+                <span class="btn btn-link btn-block text-center" type="button">
+                    ¡Bienvenido a la llamada de Cthulhu!
+                </span>
+            </h2>
+        </div>
+        <div class="show" aria-labelledby="headingOne">
+            <div class="card-body text-center">
+                <p class="center-text">
+                    ¿Que quieres hacer?
+                </p>
+                <button type="button" class="menuBtn btn btn-secondary justify-content-center">Información sobre la llamada de Cthulhu</button>
+                <br>
+                <button type="button" class="menuBtn btn btn-secondary justify-content-center">Gestiona tus personajes</button>
+                <br>
+                <button type="button" class="menuBtn btn btn-secondary justify-content-center">Jugar una nueva historia</button>
+                <br>
+                <button type="button" class="menuBtn btn btn-secondary justify-content-center">Seguir una historia ya empezada</button>
+                <br>
+                <button type="button" class="menuBtn btn btn-secondary justify-content-center">Volver atrás</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script -->
+<script type="module" src = "menu-app.js" ></script>
+</body>
+</html>
